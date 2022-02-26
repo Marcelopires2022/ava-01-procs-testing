@@ -1,6 +1,6 @@
 # Avaliação 01 Procedimentos e Testagem
 
-Link do GitHub Classroom <https://classroom.github.com/a/kYeCCTUo>
+Link do GitHub Classroom <https://classroom.github.com/a/ruGXM8vf>
 
 
 
