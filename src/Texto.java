@@ -7,7 +7,7 @@ class Texto {
 		for (int i = 0; i < umaString.length(); i++) {
 			// cont ++;
 			// resp += F.charAt(i);
-			umaString2 += (umaString.length());
+			umaString2 += ( umaString.length() );
 
 		}
 

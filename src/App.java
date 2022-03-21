@@ -6,7 +6,7 @@ class App {
 		int dividendo = 18;
 		int divisor = 5;
 
-		int resto = Matematica.resto(dividendo, divisor);
+		int resto = Matematica.resto( dividendo, divisor );
 		// print:
 
 		// System.out.println(resto); // Deve imprimir: 1
