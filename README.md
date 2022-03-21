@@ -40,7 +40,9 @@ System.out.println(Matematica.resto(29, 5) == 4);
 
 ### Preencher String
 
-Considere uma _string_, uma largura e um caractere para preenchimento. Implementar o método `pad` que faz o preenchimento de uma _string_ com um _char_ específico para obter um _length_ esperado. Implemente na classe [Texto](src/Texto.java) considerando os seguintes casos de teste:
+Considere uma _string_, uma largura e um caractere para preenchimento. Implementar o método `pad` que faz o preenchimento de uma 
+_string_ com um _char_ específico para obter um 
+_length_ esperado. Implemente na classe [Texto](src/Texto.java) considerando os seguintes casos de teste:
 
 ```java
 String umaString = "tads"; // length 4
