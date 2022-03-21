@@ -35,12 +35,7 @@ class App {
 		// feito 18 / 5 = 5 resto = 3 true = feito
 		// adicione mais 3 casos de teste na forma de prints e assertivas = feito
 
-		System.out.println(Texto.pad("TADS "));
-
-
-
-
-		//System.out.println(Frase);
+		System.out.println(Texto.pad("TADS"));
 		//System.out.println(cont == 4);// caso de teste tem que ser 4 = true
 	}
 }
