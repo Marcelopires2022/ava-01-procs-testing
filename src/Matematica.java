@@ -1,7 +1,12 @@
 class Matematica {
-  // IMPLEMENTE!
-  public static int resto(int dividendo, int divisor) {
-    return 0;
-  }
+	  // IMPLEMENTE!
+  static int resto(int dividendo, int divisor) {
 
+		int quociente = (dividendo / divisor);
+
+		int resto = dividendo - (divisor * quociente);
+
+    return resto;
+  }
 }
+
