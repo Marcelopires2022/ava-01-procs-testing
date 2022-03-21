@@ -4,7 +4,7 @@ class Matematica {
 
 		int quociente = (dividendo / divisor);
 
-		int resto = dividendo - (divisor * quociente);
+		int resto = dividendo - ( divisor * quociente );
 
     return resto;
   }
