@@ -58,7 +58,7 @@ class App {
 
 		System.out.println(Texto.pad("", 8, '#'));
 
-		System.out.println(Texto.pad("", 8, '#').equals("########"));//true
+		System.out.println(Texto.pad("", 8, '#').equals("########"));// true
 
 	}
 }
