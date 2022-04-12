@@ -1,12 +1,13 @@
 class App {
 
 	public static void main(String[] args) {
+
 		System.out.println("Olá mundo!");
 
 		int dividendo = 18;
 		int divisor = 5;
 
-		int resto = Matematica.resto( dividendo, divisor );
+		int resto = Matematica.resto(dividendo, divisor);
 		// print:
 
 		// System.out.println(resto); // Deve imprimir: 1
@@ -33,8 +34,31 @@ class App {
 		System.out.println(resto == 3);
 		// feito 18 / 5 = 5 resto = 3 true = feito
 		// adicione mais 3 casos de teste na forma de prints e assertivas = feito
+		// =======================================================================
 
-		System.out.println(Texto.pad("TADS"));
-		// System.out.println(cont == 4);// caso de teste tem que ser 4 = true
+		String umaString = "TADS"; // length = 4
+		// 0123 4 IndexOutOfBoundsException
+		// i
+		int largura = 10;
+		char umCaractere = '!'; // 6
+
+		String resultado = Texto.pad(umaString, largura, umCaractere);
+		System.out.println(resultado); // deve imprimir TADS//////
+
+		System.out.println("==========assertivas=============");// assertivas
+		System.out.println(resultado.length() == 10);// tem que imprimir true
+		System.out.println(resultado.equals("TADS!!!!!!"));// imprime true
+		// estava dando false, porque coloquei o tads em minusculo
+		System.out.println(Texto.pad("oi", 5, '*').equals("oi***"));// true
+		// Texto.pad(umaString, largura, umCaractere);
+
+		// System.out.println(Texto.pad("logica", 5, "*").equals("logica"));
+
+		System.out.println(Texto.pad("logica", 6, '*').length() == 6);
+
+		System.out.println(Texto.pad("", 8, '#'));
+
+		System.out.println(Texto.pad("", 8, '#').equals("########"));//true
+
 	}
 }
