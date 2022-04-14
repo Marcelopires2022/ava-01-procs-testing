@@ -1,17 +1,14 @@
 class Texto {
 
-	static String pad(String umaString) {
-		String umaString2 = "TADS";
-		// int cont = 0;
-
-		for (int i = 0; i < umaString.length(); i++) {
-			// cont ++;
-			// resp += F.charAt(i);
-			umaString2 += ( umaString.length() );
+	 public static String pad(String umaString, int largura, char umCaractere){
+		String resultado = "";
+		for (int i = 0; i < largura - umaString.length(); i++) {
+			resultado += umCaractere; // n vezes o caractere
+ 		}
+		return umaString + resultado;
 
 		}
-
-		return umaString2;
-
+			
 	}
-}
+
+

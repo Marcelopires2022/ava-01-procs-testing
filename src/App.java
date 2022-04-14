@@ -1,40 +1,44 @@
-class App {
+import java.io.PrintStream;
 
-	public static void main(String[] args) {
-		System.out.println("Olá mundo!");
+public class App{
+	 public static void main(String[] args) {
 
-		int dividendo = 18;
-		int divisor = 5;
+		int dividendo = 5;
+		int divisor = 2;
 
-		int resto = Matematica.resto( dividendo, divisor );
-		// print:
+		int resto = Matematica.resto(dividendo, divisor);
 
-		// System.out.println(resto); // Deve imprimir: 1
-		// assertiva: feito
-		// System.out.println(resto == 1); // Deve imprimir: true
-		// mais assertivas: (devem imprimir true) = feito
+		System.out.println(resto);// Deve imprimir : 1
 
-		// System.out.println(resto == 2); // Deve imprimir: true
-		// mais assertivas: (devem imprimir true) = feito
-		// System.out.println(Matematica.resto(10, 4) == 2); feito
+		// assertiva:
+		System.out.println(resto == 1); // Deve imprimir: true
+		// mais assertivas: (devem imprimir true)
+		System.out.println(Matematica.resto(10, 4) == 2);
+		System.out.println(Matematica.resto(29, 5) == 4);
+		// adicione mais 3 casos de teste na forma de prints e assertivas
 
-		// System.out.println(resto == 4); // Deve imprimir: true
-		// System.out.println(Matematica.resto(29, 5) == 4); feito
+		System.out.println(Matematica.resto(51, 10) == 1);
+		System.out.println(Matematica.resto(91, 3) == 1);
+		System.out.println(Matematica.resto(18, 5) == 3);
+		
 
-		// System.out.println(resto);
-		// System.out.println(resto == 0);
-		// 50 / 10 = 0 = resto = 0 true - feito
+		String umaString = "tads"; // length = 4
+		int largura = 10;
+		char umCaractere = '!'; // 6
 
-		// System.out.println(resto);
-		// System.out.println(resto == 1);
-		// 91 / 3 = 20 = resto = true = feito
+		String resultado = Texto.pad(umaString, largura, umCaractere);
+		System.out.println(resultado);// tads!!!!!!
 
-		System.out.println(resto);
-		System.out.println(resto == 3);
-		// feito 18 / 5 = 5 resto = 3 true = feito
-		// adicione mais 3 casos de teste na forma de prints e assertivas = feito
+		//assertivas
 
-		System.out.println(Texto.pad("TADS"));
-		// System.out.println(cont == 4);// caso de teste tem que ser 4 = true
+		System.out.println(resultado.length() == 10);//true
+		System.out.println(resultado.equals ("tads!!!!!!"));//true
+		System.out.println(Texto.pad("oi", 5, '*').equals("oi***"));//true
+		
+		System.out.println(Texto.pad("logica", 5,'*').equals("logica"));//true
+
+		System.out.println(Texto.pad("logica", 6, '*').length()== 6);//true
+		System.out.println(Texto.pad("", 8, '#'));//########
+		System.out.println(Texto.pad("",8,'#').equals("########"));//true
 	}
 }
