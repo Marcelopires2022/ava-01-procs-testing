@@ -1,12 +1,16 @@
-import java.io.PrintStream;
 
 public class App{
 	 public static void main(String[] args) {
+
+
+		System.out.println("Olá mundo!");
+
 
 		int dividendo = 5;
 		int divisor = 2;
 
 		int resto = Matematica.resto(dividendo, divisor);
+
 
 		System.out.println(resto);// Deve imprimir : 1
 
@@ -29,6 +33,7 @@ public class App{
 		String resultado = Texto.pad(umaString, largura, umCaractere);
 		System.out.println(resultado);// tads!!!!!!
 
+
 		//assertivas
 
 		System.out.println(resultado.length() == 10);//true
@@ -40,5 +45,8 @@ public class App{
 		System.out.println(Texto.pad("logica", 6, '*').length()== 6);//true
 		System.out.println(Texto.pad("", 8, '#'));//########
 		System.out.println(Texto.pad("",8,'#').equals("########"));//true
+
+
+		
+		  }
 	}
-}
