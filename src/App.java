@@ -2,15 +2,12 @@
 public class App{
 	 public static void main(String[] args) {
 
-
 		System.out.println("Olá mundo!");
-
 
 		int dividendo = 5;
 		int divisor = 2;
 
 		int resto = Matematica.resto(dividendo, divisor);
-
 
 		System.out.println(resto);// Deve imprimir : 1
 
@@ -25,7 +22,6 @@ public class App{
 		System.out.println(Matematica.resto(91, 3) == 1);
 		System.out.println(Matematica.resto(18, 5) == 3);
 		
-
 		String umaString = "tads"; // length = 4
 		int largura = 10;
 		char umCaractere = '!'; // 6
@@ -35,7 +31,6 @@ public class App{
 
 
 		//assertivas
-
 		System.out.println(resultado.length() == 10);//true
 		System.out.println(resultado.equals ("tads!!!!!!"));//true
 		System.out.println(Texto.pad("oi", 5, '*').equals("oi***"));//true
@@ -46,7 +41,21 @@ public class App{
 		System.out.println(Texto.pad("", 8, '#'));//########
 		System.out.println(Texto.pad("",8,'#').equals("########"));//true
 
+		//CASOS DE TESTES EXCEL
+		System.out.println(Excel.columnNumber("AB"));// 28
 
+		//ASSERTIVA
+		System.out.println(Excel.columnNumber("AB") == 28);//true
+		System.out.println(Excel.columnNumber("A") == 1);//true
+		System.out.println(Excel.columnNumber("C") == 3);//true
+		System.out.println(Excel.columnNumber("Z") == 26);//true
+		System.out.println(Excel.columnNumber("ZY") == 701);//true
+		System.out.println(Excel.columnNumber("TADS") == 352319);//true
+		System.out.println(Excel.columnNumber("F") == 6);//true
+		System.out.println(Excel.columnNumber("ZZ") == 702);//true
+		System.out.println(Excel.columnNumber("E") == 5);//true	
 		
-		  }
+		
+	  }	    
 	}
+	
